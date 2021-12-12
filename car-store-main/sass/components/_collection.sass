@@ -1,0 +1,111 @@
+.collection
+    color: #FDE5E6
+
+    &__headline
+        height: 130px
+        color: #11142D
+        position: relative
+        font:
+            size: 62px
+            weight: bold
+            family: Mulish-Bold
+
+    &__btn--left
+        position: absolute
+        right: 80px
+        top: 13px
+        background-image: url(../img/collection/btn-left.svg)
+        background-size: contain
+        border-radius: 25px
+        height: 48px
+        width: 48px
+        border: 0
+        transition: 0.3s linear
+
+    &__btn--right
+        position: absolute
+        right: 0
+        top: 13px
+        background-image: url(../img/collection/btn-right.svg)
+        background-size: contain
+        border-radius: 25px
+        height: 48px
+        width: 48px
+        border: 0
+        transition: 0.3s linear
+
+    &__btn--left:hover, &__btn--right:hover
+        background-color: #bebebe
+
+    &__models > div:hover
+        transition: 1s
+        opacity: 0.8
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+    &__models
+        justify-content: center
+        display: grid
+        height: 816px
+        gap: 16px
+        grid-template-columns: 400px 400px 400px
+        grid-auto-rows: minmax(400px, auto)
+
+    &__models > div
+        opacity: 1
+        transition: 0.5s
+        background-position: center
+
+    &__item
+        margin-top: 188px
+        width: 250px
+
+    &__name-model
+        font-size: 48px
+        color: white
+
+    &__name-feature
+        margin-top: 32px
+        list-style: none
+
+    &__name-feature li
+        display: inline
+
+    &__name-feature li:not(:first-child)
+        margin-left: 24px
+
+    &__arrow-right
+        margin-top: 28px
+
+    &__model-1
+        padding-left: 40px
+        grid-area: 1 / 1 / 2 / 3
+        background-size: 100%
+
+    &__model-2
+        grid-area: 1 / 3 / 2 / 4
+
+    &__model-3
+        grid-area: 2 / 1 / 3 / 2
+
+    &__model-4
+        grid-area: 2 / 2 / 3 / 3
+
+    &__model-5
+        grid-area: 2 / 3 / 3 / 4
+
+    @media (max-width: 1300px)
+        &__model-5, &__model-2
+            display: none
+
+        &__models
+            grid-template-columns: 400px 400px
+
+@media (min-width: 576px)
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+
+// Extra large devices (large desktops, 1200px and up)
